@@ -8,7 +8,7 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.0/firebase
 
 // Firebase Configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDgCfaG3yvS_UMc_JTGo5J6RMsG8yEDl3w",
+    apiKey: "",
     authDomain: "shopping-behavior-of-customer.firebaseapp.com",
     projectId: "shopping-behavior-of-customer",
     storageBucket: "shopping-behavior-of-customer.appspot.com",
