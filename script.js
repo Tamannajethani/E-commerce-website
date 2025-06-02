@@ -9,12 +9,12 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.0/firebase
 // Firebase Configuration
 const firebaseConfig = {
     apiKey: "",
-    authDomain: "shopping-behavior-of-customer.firebaseapp.com",
-    projectId: "shopping-behavior-of-customer",
-    storageBucket: "shopping-behavior-of-customer.appspot.com",
-    messagingSenderId: "897699991344",
-    appId: "1:897699991344:web:09ab9a4d26eb8df47382f5",
-    measurementId: "G-C37SQ5Z70M"
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
 };
 
 let app, auth, db, analytics;
