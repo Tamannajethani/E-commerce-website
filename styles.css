@@ -1,0 +1,268 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    background: #333;
+    padding: 10px;
+    justify-content: space-between;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul img{
+    height: 40px;
+    width: 50px;
+position: absolute;
+left: 0;}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Home section container */
+.image-container {
+    display: flex;
+    position: relative;
+    width: 100%; /* Full viewport width */
+    height: 500px; /* Full viewport height */
+}
+
+.home-image {
+    width: 100%; /* Each image takes the full width of the viewport */
+    height: auto; /* Each image takes the full height of the viewport */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    transition: transform 1s ease-in-out; /* Smooth sliding effect */
+}
+/* Categories & Products - Equal Size */
+.category-container,
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+}
+
+.category-item,
+.product-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+}
+/* Ensure images are the same size */
+.category-item img,
+.product-item img { 
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images maintain aspect ratio and fill the box */
+    border-radius: 8px;
+}
+
+
+
+/* Ensure text alignment is consistent */
+.category-item h3,
+.product-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    flex-grow: 1; /* Ensures all items expand equally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure buttons are the same size */
+.category-item button,
+.product-item button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px; /* Fixed height */
+}
+
+.category-item button:hover,
+.product-item button:hover {
+    background-color: #218838;
+}
+
+
+/* Add to Cart Button */
+.add-to-cart {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #218838;
+}
+
+
+.quantity {
+    width: 50px;
+    text-align: center;
+}
+.cart-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.cart-button:hover {
+    background-color: darkgreen;
+}
+.cart {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.cart-item img {
+    width: 50px;
+    height: 50px;
+}
+/* Profile Dropdown - Aesthetic Styling */
+#profile {
+    position: absolute;
+    top: 60px; /* Slightly lower for better alignment */
+    right: 20px;
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa); /* Soft gradient */
+    border-radius: 12px; /* Smooth rounded corners */
+    padding: 15px;
+    width: 280px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    border: 1px solid #ddd; /* Light border */
+}
+
+/* Show dropdown when active */
+#profile.active {
+    max-height: 350px; /* Adjusted for better animation */
+    opacity: 1;
+}
+
+/* Profile Details */
+#profile h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#profile p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+    padding-left: 10px;
+}
+
+/* Logout Button - Aesthetic */
+#profile button {
+    display: block;
+    width: 100%;
+    background: #ff6b6b; /* Soft red */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+#profile button:hover {
+    background: #e63946; /* Slightly darker red */
+}
+
+/* Smooth dropdown effect */
+#profile.active {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* About Us Section */
+.about-us {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    border-top: 2px solid #ddd;
+}
+
+.about-us h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2d2d2d;
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us p:last-child {
+    margin-bottom: 0;
+}
+
+.about-us a {
+    color: #00b300;
+    text-decoration: none;
+}
+
+.about-us a:hover {
+    text-decoration: underline;
+}

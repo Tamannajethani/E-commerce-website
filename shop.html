@@ -1,0 +1,71 @@
+<!-- shop.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="sicon.png" alt="Store Icon"></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#cart">View Cart 🛒</a></li>
+            <li><a href="javascript:void(0);" id="profile-toggle">Personal Details 👤</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2 style="text-align:center">Welcome to Our Store</h2>
+        <div class="image-container">
+            <img id="image1" class="home-image" src="img1.png" alt="Image 1" >
+            <img id="image2" class="home-image" src="img2.jpg" alt="Image 2">
+            <img id="image3" class="home-image" src="img3.jpg" alt="Image 3">
+        </div>
+    </section>
+
+    <section id="categories">
+        <h2>Categories</h2>
+        <div class="category-container" id="category-container"></div>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Products</h2>
+        <div id="product-list" class="product-list"></div>
+    </section>
+
+    <section id="cart" class="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-container"></div>
+
+        <div id="cart-items"></div>
+        
+
+    </section>
+    
+    
+    <section id="about-us" class="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to our Store, your number one source for best and fresh products.</p>
+        <p>&copy; Tamanna & Sneha</p>
+    </section>
+
+    <!-- Profile Section (Dropdown) -->
+    <section id="profile">
+        <h2>Profile Details</h2>
+        <p><strong>Username:</strong> <span id="profile-username"></span></p>
+        <p><strong>Email:</strong> <span id="profile-email"></span></p>
+        <p><strong>Contact:</strong> <span id="profile-contact"></span></p>
+        <button id="logout-btn">Logout</button>
+    </section>
+    
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
